@@ -7,11 +7,11 @@
 $(aws ecr get-login --no-include-email --region ap-southeast-1)
 
 # build the docker image
-docker build --target production -t vly1-main-repo .
+docker build -f Dockerfile-staging --target production -t vly2-alpha .
 
 # tag the image
-docker tag vly1-main-repo:latest 585172581592.dkr.ecr.ap-southeast-1.amazonaws.com/vly1-main-repo:latest
+docker tag vly2-alpha:latest 585172581592.dkr.ecr.ap-southeast-1.amazonaws.com/vly2-alpha:latest
 
 # push to the repository
-docker push 585172581592.dkr.ecr.ap-southeast-1.amazonaws.com/vly1-main-repo:latest
+docker push 585172581592.dkr.ecr.ap-southeast-1.amazonaws.com/vly2-alpha:latest
 

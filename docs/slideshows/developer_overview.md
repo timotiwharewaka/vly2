@@ -542,7 +542,7 @@ He tika i te timatanga  | it is right from the start
     <div>
         <h1>Test Internationalisation Formatting</h1>
         <FormattedMessage
-            id='demo.greeting'
+            id='hello.greeting'
             defaultMessage='Hello World!'
             description='Use the local equivalent of Hello World.'
         />

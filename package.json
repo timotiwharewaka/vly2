@@ -10,7 +10,7 @@
     "fix": "standard --fix",
     "dev": "nodemon -w server -w package.json server/server.js",
     "build": "next build && node ./x/default-lang",
-    "heroku-postbuild": "next build",
+    "docker-build": "next build",
     "start": "NODE_ENV=production node --experimental-modules server/server.js",
     "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "docker-test:build": "docker build -t vly-test:latest -f Dockerfile-test . ",
